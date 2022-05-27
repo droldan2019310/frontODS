@@ -1,0 +1,45 @@
+<section class="pt-3">
+    <div class="container row pt-5 mt-3 pb-5">
+        <div class="w-100">
+            <mat-card  *ngFor="let question of questions" class="mr-2 slide">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{question.userid.username}} |  {{question.principalQuestion}}</mat-card-title>
+                    <mat-card-subtitle>{{question.userid.name}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        {{question.description}}
+                    </p>
+                    <mat-card-subtitle>{{question.asignature.description}}</mat-card-subtitle>
+                </mat-card-content>
+                <mat-card-actions>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="w-100 text-center">
+            <h2>RESPUESTAS</h2>
+        </div>
+        <div class="w-100">
+            <mat-card  *ngFor="let answer of answers" class="mt-2 slide">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{answer.userid.username}} || RESPUESTA: {{answer.id}}</mat-card-title>
+                    <mat-card-subtitle>{{answer.userid.name}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        {{answer.bigDescription}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</section>
+<div style="position: fixed; bottom:2rem; right: 2rem;">
+    <button (click)="openBottomSheet()" mat-mini-fab color="primary" >
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

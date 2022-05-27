@@ -1,0 +1,18 @@
+.container{
+    background: transparent;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    min-height: 100vh;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 2;
+}
+
+*{
+    color:black !important;
+}
+
+.cal-month-view .cal-cell-row .cal-cell:hover, .cal-month-view .cal-cell.cal-has-events.cal-open{
+    color: black !important;
+}

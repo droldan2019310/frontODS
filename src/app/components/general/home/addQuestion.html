@@ -1,0 +1,21 @@
+<div class="p-4">
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Pregunta Principal:</mat-label>
+        <input  name="principalQuestion" id="principalQuestion" #principalQuestion="ngModel" [(ngModel)]="question.principalQuestion"  matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput  name="description" id="description" #description="ngModel" [(ngModel)]="question.description"></textarea>
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Materia</mat-label>
+        <mat-select  name="asignature" id="asignature" #asignature="ngModel" [(ngModel)]="question.asignature">
+          <mat-option value="1">Matemática</mat-option>
+          <mat-option value="2" >Literatura</mat-option>
+          <mat-option value="3">Ciencias Naturales</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div class="w-100" style="display: flex; justify-content: end">
+        <button (click)="saveQuestion()" mat-raised-button color="primary">Guardar</button>
+    </div>
+</div>

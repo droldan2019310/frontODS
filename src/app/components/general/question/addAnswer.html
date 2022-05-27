@@ -1,0 +1,11 @@
+<div class="p-4">
+    <h2>RESPUESTA: </h2>
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput  name="bigDescription" id="bigDescription" #bigDescription="ngModel" [(ngModel)]="answer.bigDescription"></textarea>
+    </mat-form-field>
+    
+    <div class="w-100" style="display: flex; justify-content: end">
+        <button (click)="saveAnswer()" mat-raised-button color="primary">Guardar</button>
+    </div>
+</div>

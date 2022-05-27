@@ -1,0 +1,41 @@
+
+<section class="container">
+    <div class="w-100">
+        <div class="row">
+            <div class="col-lg-4 login-sec ml-2 mb-2">
+                <div class="w-100">
+                    <h2 class="text-center">Login Now</h2>
+                    <form class="login-form" ngForm="ngForm" (ngSubmit)="login()">
+                        
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>email:</mat-label>
+                            <input #username="ngModel" name="username" id="username" [(ngModel)]="user.username" matInput>
+                        </mat-form-field>
+                        
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Password:</mat-label>
+                            <input matInput #password="ngModel" name="password" id="password" [(ngModel)]="user.password" type="password">
+                        </mat-form-field>
+
+                        <div class="form-check">
+                            <button type="submit" class="btn btn-login float-right">Ingresar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+            <div class="col-lg-7 banner-sec">
+                <div class="w-100" >
+                    <div class="background" style="position: relative;">
+                        <img style="  filter: brightness(.4);" class="img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="">
+                        <div class="textLayer">
+                            <h2>This is Heaven</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        </div>	
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

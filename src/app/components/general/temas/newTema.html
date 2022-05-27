@@ -1,0 +1,22 @@
+<div class="p-4">
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Titulo Principal:</mat-label>
+        <input  name="title" id="title" #title="ngModel" [(ngModel)]="tema.title"  matInput>
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Descripción Corta</mat-label>
+        <textarea matInput name="shortdescription" id="shortdescription" #shortdescription="ngModel" [(ngModel)]="tema.shortdescription"   ></textarea>
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>Descripción Grande</mat-label>
+        <textarea matInput name="bigDescription" id="bigDescription" #bigDescription="ngModel" [(ngModel)]="tema.bigDescription"   ></textarea>
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="fill">
+        <mat-label>ID DEL VIDEO (YOUTUBE):</mat-label>
+        <input  name="link" id="link" #link="ngModel" [(ngModel)]="tema.link"  matInput>
+    </mat-form-field>
+   
+    <div class="w-100" style="display: flex; justify-content: end">
+        <button (click)="saveTema()"  mat-raised-button color="primary">Guardar</button>
+    </div>
+</div>

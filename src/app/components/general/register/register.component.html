@@ -1,0 +1,61 @@
+
+<section class="container">
+    <div class="w-100">
+        <div class="row">
+            <div class="col-lg-4 login-sec ml-2 mb-2">
+                <div class="w-100">
+                    <h2 class="text-center">Register Now</h2>
+                    <form class="login-form" (ngSubmit)="register()" ngForm="ngForm" >
+                        
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Name:</mat-label>
+                            <input #name="ngModel" name="name" id="name" [(ngModel)]="user.name" matInput>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>username:</mat-label>
+                            <input #username="ngModel" name="username" id="username" [(ngModel)]="user.username" matInput>
+                        </mat-form-field>   
+
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Email:</mat-label>
+                            <input #email="ngModel" name="email" id="email" [(ngModel)]="user.email" matInput>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Phone:</mat-label>
+                            <input #phone="ngModel" name="phone" id="phone" [(ngModel)]="user.phone" matInput>
+                        </mat-form-field>
+                        
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Password:</mat-label>
+                            <input matInput #password="ngModel" name="password" id="password" [(ngModel)]="user.password" type="password">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Confirm Password:</mat-label>
+                            <input matInput  type="password">
+                        </mat-form-field>
+
+                        <div class="form-check">
+                            <button type="submit"  class="btn btn-login float-right">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+            <div class="col-lg-7 banner-sec">
+                <div class="w-100" >
+                    <div class="background" style="position: relative;">
+                        <img style="  filter: brightness(.4);" class="img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="">
+                        <div class="textLayer">
+                            <h2>Registrate</h2>
+                            <p>Tendrás acceso a muchos cursos e información de ayudas para continuar tus estudios.</p>
+                        </div>	
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
